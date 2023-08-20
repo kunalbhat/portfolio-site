@@ -36,11 +36,11 @@ p {
 }
 
 .case-study-cover {
-  @apply bg-gray-100 rounded-2xl px-10 py-16 flex flex-col items-center text-center;
+  @apply bg-gray-100 rounded-2xl px-10 py-20 flex flex-col h-full items-center justify-center text-center mb-6 md:mb-0 transition-colors;
 }
 
 .case-study-cover.skyteller {
-  @apply bg-indigo-900 text-white;
+  @apply bg-indigo-900 hover:bg-indigo-950 text-white;
 }
 
 .case-study-cover.braintree {
@@ -49,4 +49,16 @@ p {
 
 .case-study-cover.small-block {
   @apply justify-center;
+}
+
+.section-header {
+  @apply flex flex-col items-center justify-center text-center;
+}
+
+.section-header h2 {
+  @apply mb-2;
+}
+
+.site-footer {
+  @apply my-24 flex items-center justify-between;
 }
