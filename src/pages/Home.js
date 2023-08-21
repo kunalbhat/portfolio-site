@@ -23,7 +23,7 @@ export function Home() {
           </p>
           <p>
             I've worked on some cool things and love sharing my learnings from
-            these experiences. Read on below or{" "}
+            these experiences. Dive in below or{" "}
             <Link to="/about">learn more about me</Link>.
           </p>
         </div>
@@ -33,23 +33,38 @@ export function Home() {
         <div className="md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <header className="section-header">
             <h2>Case Studies</h2>
-            <p>In-depth walkthroughs of large projects.</p>
+            <p>In-depth walkthroughs of extra-large projects.</p>
           </header>
           <Link to="/case-studies/skyteller">
             <ArticleComponent theme="skyteller">
-              {/* <EyeIcon className="icon" /> */}
               <h3>Crypto Off-Ramp</h3>
             </ArticleComponent>
           </Link>
 
-          <ArticleComponent>
-            {/* <EyeIcon className="icon" /> */}
-            <h3>NFT Gallery</h3>
+          <ArticleComponent theme="braintree">
+            <h3>Payments Dashboard</h3>
+          </ArticleComponent>
+        </div>
+      </section>
+
+      <section>
+        <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <header className="section-header">
+            <h2>Projects</h2>
+            <p>Brief overviews of some cooler projects I've worked on.</p>
+          </header>
+          <Link to="/case-studies/skyteller">
+            <ArticleComponent theme="nftcrawler">
+              <h3>NFT Crawler</h3>
+            </ArticleComponent>
+          </Link>
+
+          <ArticleComponent theme="daowow">
+            <h3>DAO Aggregator</h3>
           </ArticleComponent>
 
-          <ArticleComponent theme="braintree">
-            {/* <ComputerDesktopIcon className="icon" /> */}
-            <h3>Payments Dashboard</h3>
+          <ArticleComponent theme="">
+            <h3>Something Else</h3>
           </ArticleComponent>
         </div>
       </section>

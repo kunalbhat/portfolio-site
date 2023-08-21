@@ -47,12 +47,20 @@ p {
   @apply bg-gray-950 text-white;
 }
 
+.case-study-cover.daowow {
+  @apply bg-[#ecfaf9] text-[#0c8a7c];
+}
+
+.case-study-cover.nftcrawler {
+  @apply bg-[#f0c909] text-white;
+}
+
 .case-study-cover.small-block {
   @apply justify-center;
 }
 
 .section-header {
-  @apply flex flex-col items-center justify-center text-center;
+  @apply flex flex-col items-center justify-center text-center px-8;
 }
 
 .section-header h2 {
