@@ -1,8 +1,8 @@
-import { ArticleComponent } from "../Components/ArticleComponent";
-
-import { EyeIcon } from "@heroicons/react/24/solid";
-import { ComputerDesktopIcon } from "@heroicons/react/24/solid";
+// React utils
 import { Link } from "react-router-dom";
+
+// App components
+import { ArticleComponent } from "../Components/ArticleComponent";
 
 export function Home() {
   return (
@@ -23,7 +23,8 @@ export function Home() {
           </p>
           <p>
             I've worked on some cool things and love sharing my learnings from
-            these experiences.
+            these experiences. Read on below or{" "}
+            <Link to="/about">learn more about me</Link>.
           </p>
         </div>
       </section>

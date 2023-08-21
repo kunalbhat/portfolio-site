@@ -3,7 +3,7 @@ export function SkytellerCaseStudy() {
     <>
       <header className="flex">
         <div className="w-3/5 mx-auto">
-          <h1>Skyteller</h1>
+          <h1>Skyteller - A Crypto Off-Ramp</h1>
           <p>
             Skyteller started as a dream to turn crypto into cash in just one
             click, and to make the whole crypto world more accessible and
@@ -12,7 +12,9 @@ export function SkytellerCaseStudy() {
         </div>
       </header>
       <section className="my-12">
-        <div className="bg-gray-100 w-2/3 mx-auto h-96 rounded-2xl"></div>
+        <div className="bg-gray-100 w-2/3 mx-auto h-96 rounded-2xl">
+          <img src="../images/crypto-magic.jpg" alt="Crypto Magic" />
+        </div>
       </section>
       <section className="w-3/5 mx-auto">
         <p>
@@ -20,9 +22,41 @@ export function SkytellerCaseStudy() {
           your wallet or your personal Skyteller off-ramp contract. We were all
           about making digital dollars real in a simple, single transaction, and
           helping you tailor your cash flow, save for taxes, aggregate
-          royalties, and more. We had so many plans for the future, like
-          empowering web3 workers and crypto earners with custom ENS subdomains.
+          royalties, and more.
         </p>
+
+        <h3>Implementation</h3>
+        <p>
+          A lot went into the magic that allowed users to convert crypto in
+          their wallets to cash in their bank account.
+        </p>
+
+        <h4>Log in / Authentication</h4>
+        <ul>
+          <li>RainbowKit, for Sign in with Ethereum (log in)</li>
+          <li>
+            Chainwatcher, an internal service designed for real-time risk checks
+          </li>
+        </ul>
+
+        <h4>Onboarding</h4>
+        <ul>
+          <li>Plaid, for connecting the user's destination bank account</li>
+          <li>Persona, for identity verification and KYC</li>
+        </ul>
+
+        <h4>Web3 / Crypto Interaction</h4>
+        <ul>
+          <li>
+            <a href="https://wagmi.sh/" target="_blank" rel="noreferrer">
+              Wagmi
+            </a>
+            , React hooks for interacting with crypto wallets and contracts.
+          </li>
+          <li>
+            Uniswap, a web3 library for real-time market prices on crypto assets
+          </li>
+        </ul>
       </section>
     </>
   );

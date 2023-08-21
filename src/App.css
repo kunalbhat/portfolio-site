@@ -62,3 +62,16 @@ p {
 .site-footer {
   @apply my-24 flex items-center justify-between;
 }
+
+ul {
+  @apply mb-6;
+}
+
+ul li {
+  @apply text-lg list-disc list-inside;
+}
+
+p a,
+li a {
+  @apply text-indigo-600 hover:text-indigo-700 hover:underline;
+}
