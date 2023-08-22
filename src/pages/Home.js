@@ -47,12 +47,12 @@ export function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <header className="section-header">
-            <h2>Projects</h2>
-            <p>Brief overviews of some cooler projects I've worked on.</p>
-          </header>
+      <section className="flex">
+        <header className="section-header w-1/3">
+          <h2>Projects</h2>
+          <p>Brief overviews of some cooler projects I've worked on.</p>
+        </header>
+        <article className="w-2/3 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <Link to="/case-studies/skyteller">
             <ArticleComponent theme="nftcrawler">
               <h3>NFT Crawler</h3>
@@ -66,15 +66,15 @@ export function Home() {
           <ArticleComponent theme="">
             <h3>Something Else</h3>
           </ArticleComponent>
-        </div>
+        </article>
       </section>
 
-      <section>
-        <header className="section-header">
+      <section className="flex">
+        <header className="section-header w-1/3">
           <h2>Experiments</h2>
           <p>Bite-size projects that I've hacked on for fun.</p>
         </header>
-        <div className="md:grid md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <article className="w-2/3 md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ArticleComponent theme="small-block">
             <h3>Freddy</h3>
           </ArticleComponent>
@@ -86,7 +86,11 @@ export function Home() {
           <ArticleComponent theme="small-block">
             <h3>Other Thing</h3>
           </ArticleComponent>
-        </div>
+
+          <ArticleComponent theme="small-block">
+            <h3>One More Thing</h3>
+          </ArticleComponent>
+        </article>
       </section>
     </>
   );
