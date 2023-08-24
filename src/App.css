@@ -12,7 +12,7 @@ h2 {
 }
 
 h1 {
-  @apply text-7xl mb-12;
+  @apply text-6xl md:text-7xl mb-12;
 }
 
 h2 {

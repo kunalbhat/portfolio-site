@@ -13,9 +13,9 @@ export function About() {
 
       <section className="flex">
         <div className="lg:w-1/3 text-right">
-          <h3>My Process</h3>
+          <h3 className="px-12 py-2">How I Work</h3>
         </div>
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3 lg:mr-12">
           <p>
             Because of my varied journey cycling between design, product, and
             engineering, I find it more useful to describe the activities and
@@ -34,9 +34,9 @@ export function About() {
 
       <section className="flex">
         <div className="lg:w-1/3 text-right">
-          <h3 className="p-6">My Tools</h3>
+          <h3 className="px-12 py-2">My Tools</h3>
         </div>
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3 lg:mr-12">
           <p>
             Here are some of the tools and technologies I am well versed in.
           </p>
