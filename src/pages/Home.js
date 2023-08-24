@@ -1,14 +1,45 @@
 // React utils
 import { Link } from "react-router-dom";
+import { animated, useSpring, useInView } from "@react-spring/web";
 
 // App components
 import { ArticleComponent } from "../Components/ArticleComponent";
 
 export function Home() {
+  const styles = useSpring({
+    from: {
+      opacity: 0,
+      y: 10,
+    },
+    to: {
+      opacity: 1,
+      y: 0,
+    },
+  });
+
+  const [ref, springs] = useInView(
+    () => ({
+      from: {
+        opacity: 0,
+        y: 100,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    }),
+    {
+      rootMargin: "-5% 0%",
+    }
+  );
+
   return (
     <>
       <section className="md:flex md:gap-12 md:mb-6 lg:mb-12">
-        <div className="w-full lg:w-2/3 xl:ml-auto xl:pl-8">
+        <animated.div
+          className="w-full lg:w-2/3 xl:ml-auto xl:pl-8"
+          style={styles}
+        >
           <h1 className="w-5/6">Hi, I'm Kunal and I build product.</h1>
           <p>
             I combine my 15+ years of experience from roles as a designer,
@@ -26,7 +57,7 @@ export function Home() {
             these experiences. Dive in below or{" "}
             <Link to="/about">learn more about me</Link>.
           </p>
-        </div>
+        </animated.div>
       </section>
 
       <section>
@@ -69,7 +100,7 @@ export function Home() {
         </article>
       </section>
 
-      <section className="md:flex">
+      <section className="lg:flex">
         <header className="section-header md:w-1/3">
           <h2>Experiments</h2>
           <p>Bite-size projects that I've hacked on for fun.</p>

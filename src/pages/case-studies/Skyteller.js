@@ -1,8 +1,8 @@
 export function SkytellerCaseStudy() {
   return (
     <>
-      <header className="flex">
-        <div className="w-2/3 mx-auto px-10">
+      <header className="lg:flex">
+        <div className="lg:w-2/3 mx-auto lg:px-10">
           <h1>Skyteller - A Crypto Off-Ramp</h1>
           <p>
             Skyteller started as a dream to turn crypto into cash in just one
@@ -12,7 +12,7 @@ export function SkytellerCaseStudy() {
         </div>
       </header>
       <section className="mb-12">
-        <div className="bg-gray-100 w-2/3 mx-auto overflow-hidden rounded-2xl">
+        <div className="bg-gray-100 lg:w-2/3 mx-auto overflow-hidden rounded-2xl">
           <img src="../images/crypto-magic.jpg" alt="Crypto Magic" />
         </div>
       </section>
@@ -37,12 +37,12 @@ export function SkytellerCaseStudy() {
           </div>
         </div>
       </section>
-      <section className="w-3/3">
-        <div className="flex">
-          <div className="w-1/3 bg-red-200">
+      <section className="lg:w-3/3">
+        <div className="lg:flex">
+          <div className="lg:w-1/3">
             <h2>TL;DR</h2>
           </div>
-          <div className="w-2/3 bg-green-200">
+          <div className="lg:w-2/3">
             <h3>Who is the user?</h3>
             <p>People who have a need to quickly turn crypto into cash.</p>
           </div>
