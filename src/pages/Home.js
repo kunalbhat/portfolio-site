@@ -2,9 +2,6 @@
 import { Link } from "react-router-dom";
 import { animated, useSpring, useInView } from "@react-spring/web";
 
-// App components
-import { ArticleComponent } from "../Components/ArticleComponent";
-
 export function Home() {
   const styles = useSpring({
     from: {
@@ -42,19 +39,14 @@ export function Home() {
         >
           <h1 className="w-5/6">Hi, I'm Kunal and I build products.</h1>
           <p>
-            I combine 15+ years of experience from roles as a designer, product
-            manager, and engineer to help teams iterate quickly, find product
-            market fit faster, and launch. I am a true end-to-end builder.
+            A true end-to-end builer, I combine 15+ years of experience from
+            roles as a designer, product manager, and engineer to help teams
+            iterate quickly, find product market fit faster, and launch.
           </p>
           <p>
             I specialize in <mark>payments</mark> via previous experience at
             PayPal and Braintree, <mark>contextual commerce</mark> at Modest and
             most recently, <mark>crypto</mark> at Galactic.
-          </p>
-          <p>
-            I've worked on some cool things and love sharing my learnings from
-            these experiences. Dive in below or{" "}
-            <Link to="/about">learn more about me</Link>.
           </p>
         </animated.div>
       </section>
@@ -71,30 +63,61 @@ export function Home() {
           <div className="case-study-cover paypal col-span-2">
             <h3>PayPal / Braintree</h3>
             <p>
-              I built identity &amp; access management products, redesigned a
+              I managed IAM products, launched a new version of the Braintree
               merchant dashboard, and established a merchant data platform.
             </p>
           </div>
           <div className="case-study-cover modest">
             <h3>Modest</h3>
-            <p>
-              I designed and built a contextual commerce platform. Acquired by
-              PayPal.
-            </p>
+            <p>I designed and built a contextual commerce platform.</p>
+            <small className="my-4">Acquired by PayPal</small>
           </div>
           <div className="case-study-cover dscout">
             <h3>dscout</h3>
             <p>
-              I designed and built one of the first iterations of dscouts mobile
-              research platform.
+              I designed and built one of the first iterations of dscout's
+              mobile research platform.
             </p>
           </div>
           <div className="case-study-cover gravitytank">
             <h3>gravitytank</h3>
             <p>
-              I designed, prototyped, and built stuff. Acquired by Salesforce.
+              I designed and built prototypes to help large organizations ideate
+              quickly.
             </p>
+            <small className="my-4">Acquired by Salesforce</small>
           </div>
+        </article>
+      </section>
+
+      <section className="lg:flex my-12 lg:my-24">
+        <header className="lg:w-1/3 mb-6">
+          <h2>About Me</h2>
+          {/* <div className="overflow-hidden w-48 h-48 rounded-full">
+            <img src="../images/kunal-profile.jpg" alt="Kunal profile" />
+          </div> */}
+        </header>
+        <article className="lg:w-2/3">
+          <p>
+            I've spent my 15+ years career rooted firmly in design. My path has
+            taken me from graphic design to interactive design to interaction
+            design to product design to product engineering to product
+            management.
+          </p>
+
+          <p>
+            Because of my varied journey cycling between design, product, and
+            engineering, I find it more useful to describe the activities and
+            functions that come very naturally to me, in no particular order:
+          </p>
+          <ul>
+            <li>Building prototypes to bring ideas to life</li>
+            <li>Synthesizing qualitative research</li>
+            <li>Instrumenting interfaces to collect user metics</li>
+            <li>Systems thinking</li>
+            <li>Visualizing user flows</li>
+            <li>Writing SQL to pull and analyze data</li>
+          </ul>
         </article>
       </section>
     </>

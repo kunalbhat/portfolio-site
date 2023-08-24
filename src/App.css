@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-3xl md:text-4xl border-b-4 border-b-black w-fit;
 }
 
 h3 {
@@ -31,20 +31,25 @@ p {
   @apply text-lg mt-2 mb-6 leading-relaxed;
 }
 
+ul {
+  @apply mb-6;
+}
+
+ul li {
+  @apply text-lg list-disc list-inside;
+}
+
+p a,
+li a {
+  @apply text-indigo-600 hover:text-indigo-700 hover:underline;
+}
+
 mark {
-  @apply bg-purple-200;
-}
-
-.icon {
-  @apply w-14 p-2;
-}
-
-.case-study-section {
-  @apply lg:w-3/5 lg:mx-auto my-12;
+  @apply bg-indigo-100;
 }
 
 .case-study-cover {
-  @apply bg-gray-100 rounded-2xl px-10 py-20 flex flex-col h-full items-center justify-center text-center mb-6 md:mb-0 transition-colors;
+  @apply bg-gray-100 rounded-2xl px-10 py-20 lg:py-8 flex flex-col h-full items-center justify-center text-center mb-6 md:mb-0 transition-colors;
 }
 
 .case-study-cover p {
@@ -71,31 +76,6 @@ mark {
   @apply bg-[#00a1df] text-white;
 }
 
-.case-study-cover.small-block {
-  @apply justify-center h-36;
-}
-
-.section-header {
-  @apply flex flex-col items-center justify-center text-center px-8;
-}
-
-.section-header h2 {
-  @apply mb-2;
-}
-
 .site-footer {
   @apply my-24 flex-col flex md:flex-row items-center justify-between;
-}
-
-ul {
-  @apply mb-6;
-}
-
-ul li {
-  @apply text-lg list-disc list-inside;
-}
-
-p a,
-li a {
-  @apply text-indigo-600 hover:text-indigo-700 hover:underline;
 }
