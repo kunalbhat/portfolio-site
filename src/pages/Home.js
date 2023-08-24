@@ -66,7 +66,7 @@ export function Home() {
         <article className="lg:w-2/3 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="case-study-cover galactic">
             <h3>Galactic</h3>
-            <p>I designed and built financial products for crypto users.</p>
+            <p>I designed and built financial products for web3 users.</p>
           </div>
           <div className="case-study-cover paypal col-span-2">
             <h3>PayPal / Braintree</h3>
@@ -77,7 +77,10 @@ export function Home() {
           </div>
           <div className="case-study-cover modest">
             <h3>Modest</h3>
-            <p>I designed and built a mobile commerce platform.</p>
+            <p>
+              I designed and built a contextual commerce platform. Acquired by
+              PayPal.
+            </p>
           </div>
           <div className="case-study-cover dscout">
             <h3>dscout</h3>
@@ -88,7 +91,9 @@ export function Home() {
           </div>
           <div className="case-study-cover gravitytank">
             <h3>gravitytank</h3>
-            <p>I designed, prototyped, and built stuff.</p>
+            <p>
+              I designed, prototyped, and built stuff. Acquired by Salesforce.
+            </p>
           </div>
         </article>
       </section>
