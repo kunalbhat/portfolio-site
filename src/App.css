@@ -31,6 +31,10 @@ p {
   @apply text-lg mt-2 mb-6 leading-relaxed;
 }
 
+mark {
+  @apply bg-purple-200;
+}
+
 .icon {
   @apply w-14 p-2;
 }
@@ -43,24 +47,24 @@ p {
   @apply bg-gray-100 rounded-2xl px-10 py-20 flex flex-col h-full items-center justify-center text-center mb-6 md:mb-0 transition-colors;
 }
 
-.case-study-cover.skyteller {
+.case-study-cover.galactic {
   @apply bg-indigo-900 hover:bg-indigo-950 text-white;
 }
 
-.case-study-cover.braintree {
+.case-study-cover.paypal {
+  @apply bg-[#ffd140];
+}
+
+.case-study-cover.modest {
   @apply bg-gray-950 text-white;
 }
 
-.case-study-cover.daowow {
-  @apply bg-[#f0c909] text-white;
+.case-study-cover.dscout {
+  @apply bg-[#0b73eb] text-white;
 }
 
-.case-study-cover.nftcrawler {
-  @apply bg-[#ff00d6] text-white;
-}
-
-.case-study-cover.other {
-  @apply bg-[#0362ff] text-white;
+.case-study-cover.gravitytank {
+  @apply bg-[#00a1df] text-white;
 }
 
 .case-study-cover.small-block {

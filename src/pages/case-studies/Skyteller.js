@@ -11,6 +11,16 @@ export function SkytellerCaseStudy() {
           </p>
         </div>
       </header>
+      <section className="case-study-section">
+        <h3>My Role</h3>
+        <p>Product designer and frontend engineer</p>
+
+        <h3>Project Timeline</h3>
+        <p>6mos</p>
+
+        <h3>technologies</h3>
+        <p>6 mos</p>
+      </section>
       <section className="mb-12">
         <div className="bg-gray-100 lg:w-2/3 mx-auto overflow-hidden rounded-2xl">
           <img src="../images/crypto-magic.jpg" alt="Crypto Magic" />
@@ -26,27 +36,8 @@ export function SkytellerCaseStudy() {
         </p>
       </section>
       <section className="case-study-section">
-        <div className="grid grid-cols-2 gap-8">
-          <div>
-            <h3>What is the product?</h3>
-            <p>It is a thing that klets you do stuff.</p>
-          </div>
-          <div>
-            <h3>Who is the user?</h3>
-            <p>People who have a need to quickly turn crypto into cash.</p>
-          </div>
-        </div>
-      </section>
-      <section className="lg:w-3/3">
-        <div className="lg:flex">
-          <div className="lg:w-1/3">
-            <h2>TL;DR</h2>
-          </div>
-          <div className="lg:w-2/3">
-            <h3>Who is the user?</h3>
-            <p>People who have a need to quickly turn crypto into cash.</p>
-          </div>
-        </div>
+        <h3>Who is the user?</h3>
+        <p>People who have a need to quickly turn crypto into cash.</p>
       </section>
       <section className="case-study-section">
         <h3>Implementation</h3>
@@ -75,7 +66,7 @@ export function SkytellerCaseStudy() {
             <a href="https://wagmi.sh/" target="_blank" rel="noreferrer">
               Wagmi
             </a>
-            , React hooks for interacting with crypto wallets and contracts.
+            , React hooks for interacting with crypto wallets and contracts
           </li>
           <li>
             Uniswap, a web3 library for real-time market prices on crypto assets
