@@ -65,21 +65,30 @@ export function Home() {
         </header>
         <article className="lg:w-2/3 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="case-study-cover galactic">
-            <h3>General Galactic Corporation</h3>
-            <p>I built financial products for crypto users.</p>
-            <p></p>
+            <h3>Galactic</h3>
+            <p>I designed and built financial products for crypto users.</p>
           </div>
           <div className="case-study-cover paypal col-span-2">
             <h3>PayPal / Braintree</h3>
+            <p>
+              I built identity &amp; access management products, redesigned a
+              merchant dashboard, and established a merchant data platform.
+            </p>
           </div>
           <div className="case-study-cover modest">
             <h3>Modest</h3>
+            <p>I designed and built a mobile commerce platform.</p>
           </div>
           <div className="case-study-cover dscout">
             <h3>dscout</h3>
+            <p>
+              I designed and built one of the first iterations of dscouts mobile
+              research platform.
+            </p>
           </div>
           <div className="case-study-cover gravitytank">
             <h3>gravitytank</h3>
+            <p>I designed, prototyped, and built stuff.</p>
           </div>
         </article>
       </section>
