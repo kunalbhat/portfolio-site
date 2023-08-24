@@ -2,7 +2,7 @@ export function SkytellerCaseStudy() {
   return (
     <>
       <header className="flex">
-        <div className="w-3/5 mx-auto">
+        <div className="w-2/3 mx-auto px-10">
           <h1>Skyteller - A Crypto Off-Ramp</h1>
           <p>
             Skyteller started as a dream to turn crypto into cash in just one
@@ -11,12 +11,12 @@ export function SkytellerCaseStudy() {
           </p>
         </div>
       </header>
-      <section className="my-12">
-        <div className="bg-gray-100 w-2/3 mx-auto h-96 rounded-2xl">
+      <section className="mb-12">
+        <div className="bg-gray-100 w-2/3 mx-auto overflow-hidden rounded-2xl">
           <img src="../images/crypto-magic.jpg" alt="Crypto Magic" />
         </div>
       </section>
-      <section className="w-3/5 mx-auto">
+      <section className="case-study-section">
         <p>
           We built a bridge to your bank, allowing you to off-ramp straight from
           your wallet or your personal Skyteller off-ramp contract. We were all
@@ -24,7 +24,31 @@ export function SkytellerCaseStudy() {
           helping you tailor your cash flow, save for taxes, aggregate
           royalties, and more.
         </p>
-
+      </section>
+      <section className="case-study-section">
+        <div className="grid grid-cols-2 gap-8">
+          <div>
+            <h3>What is the product?</h3>
+            <p>It is a thing that klets you do stuff.</p>
+          </div>
+          <div>
+            <h3>Who is the user?</h3>
+            <p>People who have a need to quickly turn crypto into cash.</p>
+          </div>
+        </div>
+      </section>
+      <section className="w-3/3">
+        <div className="flex">
+          <div className="w-1/3 bg-red-200">
+            <h2>TL;DR</h2>
+          </div>
+          <div className="w-2/3 bg-green-200">
+            <h3>Who is the user?</h3>
+            <p>People who have a need to quickly turn crypto into cash.</p>
+          </div>
+        </div>
+      </section>
+      <section className="case-study-section">
         <h3>Implementation</h3>
         <p>
           A lot went into the magic that allowed users to convert crypto in

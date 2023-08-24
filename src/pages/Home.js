@@ -47,12 +47,12 @@ export function Home() {
         </div>
       </section>
 
-      <section className="flex">
-        <header className="section-header w-1/3">
+      <section className="lg:flex">
+        <header className="section-header lg:w-1/3">
           <h2>Projects</h2>
           <p>Brief overviews of some cooler projects I've worked on.</p>
         </header>
-        <article className="w-2/3 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <article className="lg:w-2/3 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <Link to="/case-studies/skyteller">
             <ArticleComponent theme="nftcrawler">
               <h3>NFT Crawler</h3>
@@ -63,18 +63,18 @@ export function Home() {
             <h3>DAO Aggregator</h3>
           </ArticleComponent>
 
-          <ArticleComponent theme="">
+          <ArticleComponent theme="other">
             <h3>Something Else</h3>
           </ArticleComponent>
         </article>
       </section>
 
-      <section className="flex">
-        <header className="section-header w-1/3">
+      <section className="md:flex">
+        <header className="section-header md:w-1/3">
           <h2>Experiments</h2>
           <p>Bite-size projects that I've hacked on for fun.</p>
         </header>
-        <article className="w-2/3 md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <article className="lg:w-2/3 md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <ArticleComponent theme="small-block">
             <h3>Freddy</h3>
           </ArticleComponent>
