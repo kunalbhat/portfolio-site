@@ -39,7 +39,7 @@ export function Home() {
         >
           <h1 className="w-5/6">Hi, I'm Kunal and I build products.</h1>
           <p>
-            A true end-to-end builer, I combine 15+ years of experience from
+            A true end-to-end builder, I combine 15+ years of experience from
             roles as a designer, product manager, and engineer to help teams
             iterate quickly, find product market fit faster, and launch.
           </p>
@@ -106,9 +106,40 @@ export function Home() {
           </p>
 
           <p>
-            Because of my varied journey cycling between design, product, and
-            engineering, I find it more useful to describe the activities and
-            functions that come very naturally to me, in no particular order:
+            Because of my journey cycling between design, product, and
+            engineering, I find it useful to describe the activities that come
+            naturally to me, in no particular order:
+          </p>
+          <ul>
+            <li>Building prototypes to bring ideas to life</li>
+            <li>Synthesizing qualitative research</li>
+            <li>Instrumenting interfaces to collect user metics</li>
+            <li>Systems thinking</li>
+            <li>Visualizing user flows</li>
+            <li>Writing SQL to pull and analyze data</li>
+          </ul>
+        </article>
+      </section>
+
+      <section className="lg:flex my-12 lg:my-24">
+        <header className="lg:w-1/3 mb-6">
+          <h2>About Me</h2>
+          {/* <div className="overflow-hidden w-48 h-48 rounded-full">
+            <img src="../images/kunal-profile.jpg" alt="Kunal profile" />
+          </div> */}
+        </header>
+        <article className="lg:w-2/3">
+          <p>
+            I've spent my 15+ years career rooted firmly in design. My path has
+            taken me from graphic design to interactive design to interaction
+            design to product design to product engineering to product
+            management.
+          </p>
+
+          <p>
+            Because of my journey cycling between design, product, and
+            engineering, I find it useful to describe the activities that come
+            naturally to me, in no particular order:
           </p>
           <ul>
             <li>Building prototypes to bring ideas to life</li>

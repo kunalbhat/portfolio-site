@@ -77,5 +77,5 @@ mark {
 }
 
 .site-footer {
-  @apply my-24 flex-col flex md:flex-row items-center justify-between;
+  @apply mt-24 mb-12 flex-col flex md:flex-row items-center justify-between;
 }
