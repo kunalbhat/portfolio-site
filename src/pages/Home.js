@@ -13,22 +13,6 @@ export function Home() {
     },
   });
 
-  // const [ref, springs] = useInView(
-  //   () => ({
-  //     from: {
-  //       opacity: 0,
-  //       y: 100,
-  //     },
-  //     to: {
-  //       opacity: 1,
-  //       y: 0,
-  //     },
-  //   }),
-  //   {
-  //     rootMargin: "-5% 0%",
-  //   }
-  // );
-
   function expandSection() {
     console.log("expand!!!");
   }
@@ -47,6 +31,24 @@ export function Home() {
           </p>
         </animated.div>
       </section>
+      <div className="absolute -z-10 top-0 left-0 w-full opacity-20">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <line
+            x1="0"
+            y1="25"
+            x2="100"
+            y2="100"
+            vector-effect="non-scaling-stroke"
+            stroke="purple"
+          />
+        </svg>
+      </div>
+
       <section>
         <header className="section-header">
           <h2>Experience</h2>
