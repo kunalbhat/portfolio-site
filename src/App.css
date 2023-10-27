@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .app-container {
-  @apply max-w-7xl mx-auto p-16 h-full;
+  @apply max-w-7xl mx-auto p-4 md:p-16 h-full;
 }
 
 h1,
