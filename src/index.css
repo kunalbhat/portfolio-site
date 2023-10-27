@@ -14,8 +14,7 @@ html {
     hsl(285deg 40% 94%) 79%,
     hsl(270deg 43% 95%) 100%
   );
-  background-repeat: no-repeat;
-  @apply h-full;
+  @apply bg-no-repeat bg-fixed;
 }
 
 body {
