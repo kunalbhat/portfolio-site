@@ -41,10 +41,9 @@ export function Home() {
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
           <p className="lg:mx-12 max-w-3xl">
-            With over 16 years of experience building and delivering user
-            experiences as a designer, product manager, and software engineer, I
-            help companies ideate, test quickly, and find product market fit
-            faster.
+            For over 16 years, I've built and delivered user experiences as a
+            designer, product manager, and software engineer. I help companies
+            ideate, test quickly, and find product market fit faster.
           </p>
         </animated.div>
       </section>
@@ -55,8 +54,8 @@ export function Home() {
         <div className="lg:grid grid-cols-3 gap-8">
           <div className="case-study col-span-1" onClick={expandSection}>
             <h3>Galactic</h3>
-            <h6>(closed up shop)</h6>
-            <p>I built a web3 product for crypto users.</p>
+            <h6>(RIP crypto, closed up shop)</h6>
+            <p>I built financial products for web3 users.</p>
           </div>
           <div className="case-study col-span-1" onClick={expandSection}>
             <h3>PayPal / Braintree</h3>
@@ -101,7 +100,7 @@ export function Home() {
         <div className="lg:grid grid-cols-4 gap-8">
           <div className="case-study">
             <h3>React</h3>
-            <p>I love building useful software.</p>
+            <p>I think in components.</p>
           </div>
           <div className="case-study">
             <h3>SQL</h3>
@@ -110,6 +109,13 @@ export function Home() {
           <div className="case-study">
             <h3>Figma</h3>
             <p>My go-to design and prototyping tool.</p>
+          </div>
+          <div className="case-study">
+            <h3>VSCode</h3>
+            <p>Finally yanked me away from Vim.</p>
+          </div>
+          <div className="case-study">
+            <p>Learn a little, why don't ya.</p>
           </div>
         </div>
       </section>
