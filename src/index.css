@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans&display=swap");
 
+html {
+  background-image: linear-gradient(
+    35deg,
+    hsl(2deg 100% 93%) 0%,
+    hsl(356deg 97% 93%) 21%,
+    hsl(349deg 91% 93%) 30%,
+    hsl(343deg 82% 93%) 39%,
+    hsl(336deg 72% 93%) 46%,
+    hsl(327deg 61% 93%) 54%,
+    hsl(316deg 49% 93%) 61%,
+    hsl(302deg 38% 93%) 69%,
+    hsl(285deg 40% 94%) 79%,
+    hsl(270deg 43% 95%) 100%
+  );
+  background-repeat: no-repeat;
+  @apply h-full;
+}
+
 body {
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",

@@ -7,7 +7,8 @@ const Footer = () => {
     <footer className="container site-footer">
       <p>&copy;{year} Kunal Bhat</p>
       <p>
-        Built by hand with <HeartIcon className="w-5 inline" /> in{" "}
+        Built by hand with{" "}
+        <HeartIcon className="w-5 -mt-1 inline text-red-500" /> in{" "}
         <a href="https://react.dev/" target="_blank" rel="noreferrer">
           React
         </a>

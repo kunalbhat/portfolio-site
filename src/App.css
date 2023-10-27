@@ -3,28 +3,33 @@
 @tailwind utilities;
 
 .app-container {
-  @apply mx-auto p-8;
+  @apply max-w-7xl mx-auto p-16 h-screen;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "DM Serif Display";
 }
 
 h1 {
-  @apply text-6xl md:text-7xl mb-12;
+  @apply text-6xl md:text-8xl mb-12;
 }
 
 h2 {
-  @apply text-3xl md:text-4xl border-b-4 border-b-black w-fit;
+  @apply text-3xl md:text-4xl;
 }
 
 h3 {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-semibold;
 }
 
 h4 {
   @apply mb-4;
+}
+
+h6 {
+  @apply italic;
 }
 
 p {
@@ -48,12 +53,20 @@ mark {
   @apply bg-indigo-100;
 }
 
-.case-study-cover {
-  @apply bg-gray-100 rounded-2xl px-10 py-20 lg:py-8 flex flex-col h-full items-center justify-center text-center mb-6 md:mb-0 transition-colors;
+section {
+  @apply my-16;
+}
+
+.section-header {
+  @apply pb-8 lg:px-12;
+}
+
+.case-study {
+  @apply bg-gray-100 rounded-2xl px-8 py-20 lg:py-8 flex flex-col h-full items-center justify-center text-center mb-6 md:mb-0 transition-all shadow-xl hover:shadow-2xl;
 }
 
 .case-study-cover p {
-  @apply mb-0;
+  @apply text-base mb-0;
 }
 
 .case-study-cover.galactic {

@@ -1,6 +1,5 @@
 // React utils
-import { Link } from "react-router-dom";
-import { animated, useSpring, useInView } from "@react-spring/web";
+import { animated, useSpring } from "@react-spring/web";
 
 export function Home() {
   const styles = useSpring({
@@ -14,142 +13,105 @@ export function Home() {
     },
   });
 
-  const [ref, springs] = useInView(
-    () => ({
-      from: {
-        opacity: 0,
-        y: 100,
-      },
-      to: {
-        opacity: 1,
-        y: 0,
-      },
-    }),
-    {
-      rootMargin: "-5% 0%",
-    }
-  );
+  // const [ref, springs] = useInView(
+  //   () => ({
+  //     from: {
+  //       opacity: 0,
+  //       y: 100,
+  //     },
+  //     to: {
+  //       opacity: 1,
+  //       y: 0,
+  //     },
+  //   }),
+  //   {
+  //     rootMargin: "-5% 0%",
+  //   }
+  // );
+
+  function expandSection() {
+    console.log("expand!!!");
+  }
 
   return (
     <>
       <section className="md:flex md:gap-12 md:mb-6 lg:mb-12">
-        <animated.div
-          className="w-full lg:w-2/3 xl:ml-auto xl:pl-8"
-          style={styles}
-        >
-          <h1 className="w-5/6">Hi, I'm Kunal and I build products.</h1>
-          <p>
-            A true end-to-end builder, I combine 15+ years of experience from
-            roles as a designer, product manager, and engineer to help teams
-            iterate quickly, find product market fit faster, and launch.
-          </p>
-          <p>
-            I specialize in <mark>payments</mark> via previous experience at
-            PayPal and Braintree, <mark>contextual commerce</mark> at Modest and
-            most recently, <mark>crypto</mark> at Galactic.
+        <animated.div className="w-full" style={styles}>
+          <h1 className="lg:mx-12">
+            Hi, I'm Kunal &ndash; a product design lead in Chicago.
+          </h1>
+          <p className="lg:mx-12 max-w-3xl">
+            With over 16 years of experience building and delivering user
+            experiences as a designer, product manager, and software engineer, I
+            help companies ideate, test quickly, and find product market fit
+            faster.
           </p>
         </animated.div>
       </section>
-
-      <section className="lg:flex">
-        <header className="lg:w-1/3 mb-6">
+      <section>
+        <header className="section-header">
           <h2>Experience</h2>
         </header>
-        <article className="lg:w-2/3 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="case-study-cover galactic">
+        <div className="lg:grid grid-cols-3 gap-8">
+          <div className="case-study col-span-1" onClick={expandSection}>
             <h3>Galactic</h3>
-            <p>I designed and built financial products for web3 users.</p>
+            <h6>(closed up shop)</h6>
+            <p>I built a web3 product for crypto users.</p>
           </div>
-          <div className="case-study-cover paypal col-span-2">
+          <div className="case-study col-span-1" onClick={expandSection}>
             <h3>PayPal / Braintree</h3>
             <p>
               I managed IAM products, launched a new version of the Braintree
               merchant dashboard, and established a merchant data platform.
             </p>
           </div>
-          <div className="case-study-cover modest">
+          <div className="case-study col-span-1" onClick={expandSection}>
             <h3>Modest</h3>
+            <h6>(acquired by PayPal)</h6>
             <p>I designed and built a contextual commerce platform.</p>
-            <small className="my-4">Acquired by PayPal</small>
           </div>
-          <div className="case-study-cover dscout">
+          <div className="case-study lg:col-span-1" onClick={expandSection}>
             <h3>dscout</h3>
             <p>
-              I designed and built one of the first iterations of dscout's
-              mobile research platform.
+              I designed and built the first iterations of dscout's mobile
+              research platform.
             </p>
           </div>
-          <div className="case-study-cover gravitytank">
+          <div className="case-study col-span-1" onClick={expandSection}>
             <h3>gravitytank</h3>
+            <h6>(acquired by Salesforce)</h6>
             <p>
               I designed and built prototypes to help large organizations ideate
               quickly.
             </p>
-            <small className="my-4">Acquired by Salesforce</small>
           </div>
-        </article>
+          <div className="case-study col-span-1" onClick={expandSection}>
+            <h3>VSA</h3>
+            <p>
+              I built design systems and corporate literature for the world's
+              top brands.
+            </p>
+          </div>
+        </div>
       </section>
-
-      <section className="lg:flex my-12 lg:my-24">
-        <header className="lg:w-1/3 mb-6">
-          <h2>About Me</h2>
-          {/* <div className="overflow-hidden w-48 h-48 rounded-full">
-            <img src="../images/kunal-profile.jpg" alt="Kunal profile" />
-          </div> */}
+      <section>
+        <header className="section-header">
+          <h2>Some of my favorite things</h2>
         </header>
-        <article className="lg:w-2/3">
-          <p>
-            I've spent my 15+ years career rooted firmly in design. My path has
-            taken me from graphic design to interactive design to interaction
-            design to product design to product engineering to product
-            management.
-          </p>
-
-          <p>
-            Because of my journey cycling between design, product, and
-            engineering, I find it useful to describe the activities that come
-            naturally to me, in no particular order:
-          </p>
-          <ul>
-            <li>Building prototypes to bring ideas to life</li>
-            <li>Synthesizing qualitative research</li>
-            <li>Instrumenting interfaces to collect user metics</li>
-            <li>Systems thinking</li>
-            <li>Visualizing user flows</li>
-            <li>Writing SQL to pull and analyze data</li>
-          </ul>
-        </article>
-      </section>
-
-      <section className="lg:flex my-12 lg:my-24">
-        <header className="lg:w-1/3 mb-6">
-          <h2>About Me</h2>
-          {/* <div className="overflow-hidden w-48 h-48 rounded-full">
-            <img src="../images/kunal-profile.jpg" alt="Kunal profile" />
-          </div> */}
-        </header>
-        <article className="lg:w-2/3">
-          <p>
-            I've spent my 15+ years career rooted firmly in design. My path has
-            taken me from graphic design to interactive design to interaction
-            design to product design to product engineering to product
-            management.
-          </p>
-
-          <p>
-            Because of my journey cycling between design, product, and
-            engineering, I find it useful to describe the activities that come
-            naturally to me, in no particular order:
-          </p>
-          <ul>
-            <li>Building prototypes to bring ideas to life</li>
-            <li>Synthesizing qualitative research</li>
-            <li>Instrumenting interfaces to collect user metics</li>
-            <li>Systems thinking</li>
-            <li>Visualizing user flows</li>
-            <li>Writing SQL to pull and analyze data</li>
-          </ul>
-        </article>
+        <div className="lg:grid grid-cols-4 gap-8">
+          <div className="case-study">
+            <h3>React</h3>
+            <p>I love building useful software.</p>
+          </div>
+          <div className="case-study">
+            <h3>SQL</h3>
+            <code>DROP TABLE *</code>
+          </div>
+          <div className="case-study">
+            <h3>Figma</h3>
+            <p>My go-to design and prototyping tool.</p>
+          </div>
+        </div>
       </section>
     </>
   );
