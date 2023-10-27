@@ -13,7 +13,7 @@ h3 {
 }
 
 h1 {
-  @apply text-6xl md:text-8xl mb-12;
+  @apply text-5xl md:text-8xl mb-12;
 }
 
 h2 {
@@ -54,7 +54,7 @@ mark {
 }
 
 section {
-  @apply my-24;
+  @apply my-12 md:my-24;
 }
 
 .section-header {
@@ -90,5 +90,5 @@ section {
 }
 
 .site-footer {
-  @apply mt-24 py-16 flex-col flex md:flex-row items-center justify-between;
+  @apply mt-12 md:mt-24 mt-8 md:py-16 flex flex-col md:flex-row items-center justify-between text-center md:text-left;
 }

@@ -35,12 +35,12 @@ export function Home() {
 
   return (
     <>
-      <section className="md:flex md:gap-12 md:mb-6 lg:mb-12">
+      <section className="md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
         <animated.div className="w-full" style={styles}>
           <h1 className="lg:mx-12">
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
-          <p className="lg:mx-12 max-w-3xl">
+          <p className="lg:mx-12 lg:max-w-3xl">
             For over 16 years, I've built and delivered user experiences as a
             designer, product manager, and software engineer. I help companies
             ideate, test quickly, and find product market fit faster.
