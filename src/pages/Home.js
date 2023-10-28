@@ -129,7 +129,7 @@ export function Home() {
               payments with Braintree.
             </p>
           </article>
-          <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
+          <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-96">
             <p>Test</p>
           </aside>
         </div>
