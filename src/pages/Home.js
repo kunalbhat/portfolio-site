@@ -21,37 +21,20 @@ export function Home() {
 
   return (
     <>
-      <section className="md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
+      <section className="content-container md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
         <animated.div className="w-full" style={styles}>
           <h1 className="lg:mx-12">
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
           <p className="lg:mx-12 lg:max-w-3xl lg:pr-12">
-            For over 16 years, I've built and delivered user experiences as a
-            designer, product manager, and software engineer. I help companies
-            ideate, test quickly, and find product market fit faster.
+            I have 16 years of building and delivering user experiences in roles
+            as a designer, product manager, and software engineer. I help
+            companies ideate, test quickly, and find product market fit faster.
           </p>
         </animated.div>
       </section>
-      <div className="absolute -z-10 top-0 left-0 w-full opacity-20">
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-        >
-          <line
-            x1="0"
-            y1="25"
-            x2="100"
-            y2="100"
-            vector-effect="non-scaling-stroke"
-            stroke="purple"
-          />
-        </svg>
-      </div>
-
-      <section>
+      <div className="section-divider" />
+      <section className="content-container">
         <header className="section-header">
           <h2>Experience</h2>
         </header>
@@ -97,7 +80,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="content-container">
         <header className="section-header">
           <h2>Projects</h2>
         </header>
@@ -118,7 +101,7 @@ export function Home() {
           </article>
         </div>
       </section>
-      <section>
+      <section className="content-container">
         <div className="flex flex-col-reverse md:grid md:grid-flow-row md:gap-16 md:grid-cols-5">
           <article className="col-span-2 flex flex-col justify-center">
             <h3>Braintree Merchant Dashboard</h3>
@@ -128,7 +111,7 @@ export function Home() {
               dashboard &ndash; the primary tool merchants use to manage their
               payments with Braintree.
             </p>
-            <a href="/" className="button">
+            <a href="/" className="button mt-8 -ml-2">
               Read on
             </a>
           </article>
@@ -138,7 +121,7 @@ export function Home() {
         </div>
       </section>
       <div className="section-divider"></div>
-      <section>
+      <section className="content-container">
         <header className="section-header">
           <h2>Some of my favorite things</h2>
         </header>
@@ -149,7 +132,9 @@ export function Home() {
           </div>
           <div className="case-study">
             <h3>SQL</h3>
-            <code>DROP TABLE *</code>
+            <p>
+              <code>DROP TABLE *</code>
+            </p>
           </div>
           <div className="case-study">
             <h3>Figma</h3>

@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 .app-container {
-  @apply max-w-7xl mx-auto p-8 md:p-16 h-full;
+  @apply py-8 md:py-16;
+}
+
+.content-container {
+  @apply max-w-7xl px-8 md:px-16 mx-auto;
 }
 
 h1,
@@ -13,7 +17,7 @@ h3 {
 }
 
 h1 {
-  @apply text-5xl md:text-8xl mb-12;
+  @apply text-7xl md:text-8xl mb-12;
 }
 
 h2 {
@@ -113,9 +117,5 @@ section {
 
 .section-divider {
   background-image: url("/public/images/curve-decoration.svg");
-  @apply w-full h-24 bg-left-top bg-cover bg-no-repeat opacity-10 absolute left-0;
-}
-
-.section-divider svg path {
-  @apply stroke-pink-500;
+  @apply w-full h-24 bg-left-top bg-cover bg-no-repeat opacity-10;
 }

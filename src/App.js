@@ -5,7 +5,7 @@ import { Home } from "./pages/Home";
 
 function App() {
   return (
-    <div className="app-container container mt-8">
+    <div className="app-container mt-8">
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>

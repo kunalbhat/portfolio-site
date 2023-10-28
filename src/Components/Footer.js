@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="container site-footer">
+    <footer className="content-container site-footer">
       <p>&copy;{year} Kunal Bhat</p>
       <p>
         Built by hand with{" "}
