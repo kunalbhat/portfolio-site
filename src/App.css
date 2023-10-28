@@ -106,3 +106,16 @@ section {
 .site-footer {
   @apply mt-8 md:mt-24 md:py-16 flex flex-col md:flex-row items-center justify-between text-center md:text-left;
 }
+
+.button {
+  @apply bg-white rounded-xl px-8 py-3 flex items-center justify-center w-fit shadow-md hover:shadow-xl transition-shadow;
+}
+
+.section-divider {
+  background-image: url("/public/images/curve-decoration.svg");
+  @apply w-full h-24 bg-left-top bg-cover bg-no-repeat opacity-10 absolute left-0;
+}
+
+.section-divider svg path {
+  @apply stroke-pink-500;
+}

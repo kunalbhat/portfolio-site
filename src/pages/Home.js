@@ -128,12 +128,16 @@ export function Home() {
               dashboard &ndash; the primary tool merchants use to manage their
               payments with Braintree.
             </p>
+            <a href="/" className="button">
+              Read on
+            </a>
           </article>
           <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-96">
             <p>Test</p>
           </aside>
         </div>
       </section>
+      <div className="section-divider"></div>
       <section>
         <header className="section-header">
           <h2>Some of my favorite things</h2>
