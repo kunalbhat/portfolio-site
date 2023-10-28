@@ -133,12 +133,12 @@ export function Home() {
       <section className="content-container">
         <div className="flex flex-col-reverse md:grid md:grid-flow-row md:gap-16 md:grid-cols-5">
           <article className="col-span-2 flex flex-col justify-center">
-            <h3>Braintree Merchant Dashboard</h3>
+            <h3>Braintree Control Panel</h3>
             <h5>Braintree / PayPal</h5>
             <p className="text-base mb-0">
-              I managed the redesign and rebuild of Braintree's merchant
-              dashboard &ndash; the primary tool merchants use to manage their
-              payments with Braintree.
+              I managed the redesign and rebuild of Braintree's control panel
+              &ndash; the primary tool Braintree merchants use to manage their
+              payments.
             </p>
             <a href="/" className="button mt-8 -ml-2">
               Read on
