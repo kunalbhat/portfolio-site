@@ -19,6 +19,30 @@ export function Home() {
     console.log("expand!!!");
   }
 
+  const tagsList = [
+    "SQL",
+    "React",
+    "Figma",
+    "ProtoPie",
+    "Miro",
+    "VSCode",
+    "Mixpanel",
+    "Looker",
+    "User research",
+    "User testing",
+    "Firebase",
+    "Design systems",
+    "Systems thinking",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Tailwind",
+  ];
+
+  const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
+
+  const shuffledList = shuffle(tagsList);
+
   return (
     <>
       <section className="content-container md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
@@ -26,15 +50,16 @@ export function Home() {
           <h1 className="lg:mx-12">
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
-          <p className="text-xl leading-relaxed lg:mx-12 lg:max-w-2xl lg:pr-12">
+          <p className="lg:mx-12 lg:max-w-4xl">
             I have 16 years of building and delivering user experiences in roles
-            as a designer, product manager, and software engineer. I help
-            companies ideate, test quickly, and find product market fit faster.
+            as a designer, product manager, and software engineer. I'm a systems
+            thinker, technically oriented, and highly comfortable in new and
+            ambiguous problem areas.
           </p>
         </animated.div>
       </section>
       <div className="section-divider" />
-      <section className="content-container">
+      <section className="content-container -mt-12">
         <header className="section-header">
           <h2>Experience</h2>
         </header>
@@ -83,6 +108,7 @@ export function Home() {
       <section className="content-container">
         <header className="section-header">
           <h2>Projects</h2>
+          {/* <p>A few larger case studies to showcase that I'm most proud of.</p> */}
         </header>
         <div className="md:grid grid-flow-row gap-16 grid-cols-5">
           <aside className="skyteller-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
@@ -126,28 +152,18 @@ export function Home() {
       <div className="section-divider"></div>
       <section className="content-container">
         <header className="section-header">
-          <h2>My Tools</h2>
+          <h2>About Me</h2>
+          <p>
+            Here are some tools and activities that I am highly comfortable with
+            and have used regularly in my work.
+          </p>
         </header>
-        <div className="lg:grid grid-cols-4 gap-8">
-          <div className="case-study">
-            <h3>React</h3>
-            <p>I think in components.</p>
-          </div>
-          <div className="case-study">
-            <h3>SQL</h3>
-            <p>
-              <code>DROP TABLE *</code>
-            </p>
-          </div>
-          <div className="case-study">
-            <h3>Figma</h3>
-            <p>My go-to design and prototyping tool.</p>
-          </div>
-          <div className="case-study">
-            <h3>VSCode</h3>
-            <p>Finally yanked me away from Vim.</p>
-          </div>
-        </div>
+
+        <ul className="grid tags-list">
+          {shuffledList.map((key, value) => {
+            return <li>{key}</li>;
+          })}
+        </ul>
       </section>
     </>
   );

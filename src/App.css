@@ -73,28 +73,8 @@ section {
   @apply bg-gray-100 rounded-2xl px-8 py-20 lg:py-8 flex flex-col h-full items-center justify-center text-center mb-6 lg:mb-0 transition-all shadow-xl hover:shadow-2xl;
 }
 
-.case-study-cover p {
+.case-study p {
   @apply text-base mb-0;
-}
-
-.case-study-cover.galactic {
-  @apply bg-indigo-900 hover:bg-indigo-950 text-white;
-}
-
-.case-study-cover.paypal {
-  @apply bg-[#ffd140];
-}
-
-.case-study-cover.modest {
-  @apply bg-gray-950 text-white;
-}
-
-.case-study-cover.dscout {
-  @apply bg-[#0b73eb] text-white;
-}
-
-.case-study-cover.gravitytank {
-  @apply bg-[#00a1df] text-white;
 }
 
 .skyteller-cover {
@@ -118,4 +98,12 @@ section {
 .section-divider {
   background-image: url("/public/images/curve-decoration.svg");
   @apply w-full h-24 bg-left-top bg-cover bg-no-repeat opacity-10;
+}
+
+.tags-list {
+  @apply flex flex-wrap md:justify-center gap-4;
+}
+
+.tags-list li {
+  @apply bg-white shadow-xl px-4 py-1 text-base rounded-lg list-none flex items-center justify-center text-center hover:drop-shadow-2xl drop-shadow-md;
 }
