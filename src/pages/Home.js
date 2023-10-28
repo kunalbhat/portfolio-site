@@ -26,7 +26,7 @@ export function Home() {
           <h1 className="lg:mx-12">
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
-          <p className="lg:mx-12 lg:max-w-3xl lg:pr-12">
+          <p className="text-xl leading-relaxed lg:mx-12 lg:max-w-2xl lg:pr-12">
             I have 16 years of building and delivering user experiences in roles
             as a designer, product manager, and software engineer. I help
             companies ideate, test quickly, and find product market fit faster.
@@ -98,6 +98,9 @@ export function Home() {
               off-ramp straight from your wallet or your personal Skyteller
               off-ramp contract.
             </p>
+            <a href="/" className="button mt-8 -ml-2">
+              Read on
+            </a>
           </article>
         </div>
       </section>
@@ -115,7 +118,7 @@ export function Home() {
               Read on
             </a>
           </article>
-          <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-96">
+          <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-80 md:h-96">
             <p>Test</p>
           </aside>
         </div>
@@ -123,7 +126,7 @@ export function Home() {
       <div className="section-divider"></div>
       <section className="content-container">
         <header className="section-header">
-          <h2>Some of my favorite things</h2>
+          <h2>My Tools</h2>
         </header>
         <div className="lg:grid grid-cols-4 gap-8">
           <div className="case-study">

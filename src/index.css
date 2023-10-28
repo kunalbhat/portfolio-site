@@ -27,3 +27,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-image: linear-gradient(
+      45deg,
+      hsl(0deg 0% 9%) 0%,
+      hsl(257deg 11% 11%) 11%,
+      hsl(256deg 18% 14%) 22%,
+      hsl(255deg 23% 17%) 33%,
+      hsl(254deg 27% 19%) 44%,
+      hsl(253deg 30% 22%) 56%,
+      hsl(252deg 33% 25%) 67%,
+      hsl(252deg 35% 27%) 78%,
+      hsl(251deg 37% 30%) 89%,
+      hsl(250deg 38% 33%) 100%
+    );
+    color: text-indigo-200;
+  }
+} */
