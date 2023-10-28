@@ -113,34 +113,24 @@ export function Home() {
               click, and to make the whole crypto world more accessible and
               user-friendly. We built a bridge to your bank, allowing you to
               off-ramp straight from your wallet or your personal Skyteller
-              off-ramp contract. We were all about making digital dollars real
-              in a simple, single transaction, and helping you tailor your cash
-              flow, save for taxes, aggregate royalties, and more. We had so
-              many plans for the future, like empowering web3 workers and crypto
-              earners with custom ENS subdomains.
+              off-ramp contract.
             </p>
           </article>
         </div>
       </section>
       <section>
-        <div className="md:grid grid-flow-row gap-16 grid-cols-5">
+        <div className="flex flex-col-reverse md:grid md:grid-flow-row md:gap-16 md:grid-cols-5">
           <article className="col-span-2 flex flex-col justify-center">
             <h3>Braintree Merchant Dashboard</h3>
             <h5>Braintree / PayPal</h5>
             <p className="text-base mb-0">
-              Skyteller started as a dream to turn crypto into cash in just one
-              click, and to make the whole crypto world more accessible and
-              user-friendly. We built a bridge to your bank, allowing you to
-              off-ramp straight from your wallet or your personal Skyteller
-              off-ramp contract. We were all about making digital dollars real
-              in a simple, single transaction, and helping you tailor your cash
-              flow, save for taxes, aggregate royalties, and more. We had so
-              many plans for the future, like empowering web3 workers and crypto
-              earners with custom ENS subdomains.
+              I managed the redesign and rebuild of Braintree's merchant
+              dashboard &ndash; the primary tool merchants use to manage their
+              payments with Braintree.
             </p>
           </article>
-          <aside className="skyteller-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
-            <SkytellerLogo />
+          <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
+            <p>Test</p>
           </aside>
         </div>
       </section>
