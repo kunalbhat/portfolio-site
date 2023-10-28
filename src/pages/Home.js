@@ -1,6 +1,8 @@
 // React utils
 import { animated, useSpring } from "@react-spring/web";
 
+import { ReactComponent as SkytellerLogo } from "./skyteller-logo-white.svg";
+
 export function Home() {
   const styles = useSpring({
     from: {
@@ -24,7 +26,7 @@ export function Home() {
           <h1 className="lg:mx-12">
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
-          <p className="lg:mx-12 lg:max-w-3xl">
+          <p className="lg:mx-12 lg:max-w-3xl lg:pr-12">
             For over 16 years, I've built and delivered user experiences as a
             designer, product manager, and software engineer. I help companies
             ideate, test quickly, and find product market fit faster.
@@ -97,6 +99,53 @@ export function Home() {
       </section>
       <section>
         <header className="section-header">
+          <h2>Projects</h2>
+        </header>
+        <div className="md:grid grid-flow-row gap-16 grid-cols-5">
+          <aside className="skyteller-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
+            <SkytellerLogo />
+          </aside>
+          <article className="col-span-2 flex flex-col justify-center">
+            <h3>Skyteller</h3>
+            <h5>Galactic</h5>
+            <p className="text-base mb-0">
+              Skyteller started as a dream to turn crypto into cash in just one
+              click, and to make the whole crypto world more accessible and
+              user-friendly. We built a bridge to your bank, allowing you to
+              off-ramp straight from your wallet or your personal Skyteller
+              off-ramp contract. We were all about making digital dollars real
+              in a simple, single transaction, and helping you tailor your cash
+              flow, save for taxes, aggregate royalties, and more. We had so
+              many plans for the future, like empowering web3 workers and crypto
+              earners with custom ENS subdomains.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <div className="md:grid grid-flow-row gap-16 grid-cols-5">
+          <article className="col-span-2 flex flex-col justify-center">
+            <h3>Braintree Merchant Dashboard</h3>
+            <h5>Braintree / PayPal</h5>
+            <p className="text-base mb-0">
+              Skyteller started as a dream to turn crypto into cash in just one
+              click, and to make the whole crypto world more accessible and
+              user-friendly. We built a bridge to your bank, allowing you to
+              off-ramp straight from your wallet or your personal Skyteller
+              off-ramp contract. We were all about making digital dollars real
+              in a simple, single transaction, and helping you tailor your cash
+              flow, save for taxes, aggregate royalties, and more. We had so
+              many plans for the future, like empowering web3 workers and crypto
+              earners with custom ENS subdomains.
+            </p>
+          </article>
+          <aside className="skyteller-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
+            <SkytellerLogo />
+          </aside>
+        </div>
+      </section>
+      <section>
+        <header className="section-header">
           <h2>Some of my favorite things</h2>
         </header>
         <div className="lg:grid grid-cols-4 gap-8">
@@ -115,9 +164,6 @@ export function Home() {
           <div className="case-study">
             <h3>VSCode</h3>
             <p>Finally yanked me away from Vim.</p>
-          </div>
-          <div className="case-study">
-            <p>Learn a little, why don't ya.</p>
           </div>
         </div>
       </section>
