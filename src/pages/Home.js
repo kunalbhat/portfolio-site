@@ -150,7 +150,7 @@ export function Home() {
         </div>
       </section>
       <div className="section-divider"></div>
-      <section className="content-container lg:grid grid-cols-3 gap-24">
+      <section className="content-container grid-flow-row grid lg:grid-flow-col lg:grid-cols-3 gap-8 lg:gap-24">
         <div className="col-span-1">
           <h2>About Me</h2>
           <p>
