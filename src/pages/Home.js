@@ -110,8 +110,8 @@ export function Home() {
           <h2>Projects</h2>
           {/* <p>A few larger case studies to showcase that I'm most proud of.</p> */}
         </header>
-        <div className="md:grid grid-flow-row gap-16 grid-cols-5">
-          <aside className="skyteller-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
+        <div className="lg:grid grid-flow-row gap-16 grid-cols-5">
+          <aside className="skyteller-cover mb-8 lg:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
             <SkytellerLogo />
           </aside>
           <article className="col-span-2 flex flex-col justify-center">
@@ -131,7 +131,7 @@ export function Home() {
         </div>
       </section>
       <section className="content-container">
-        <div className="flex flex-col-reverse md:grid md:grid-flow-row md:gap-16 md:grid-cols-5">
+        <div className="flex flex-col-reverse lg:grid lg:grid-flow-row lg:gap-16 lg:grid-cols-5">
           <article className="col-span-2 flex flex-col justify-center">
             <h3>Braintree Control Panel</h3>
             <h5>Braintree / PayPal</h5>
@@ -144,26 +144,39 @@ export function Home() {
               Read on
             </a>
           </article>
-          <aside className="braintree-cover mb-8 md:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-80 md:h-96">
+          <aside className="braintree-cover mb-8 lg:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-80 md:h-96">
             <p>Test</p>
           </aside>
         </div>
       </section>
       <div className="section-divider"></div>
-      <section className="content-container">
-        <header className="section-header">
+      <section className="content-container lg:grid grid-cols-3 gap-24">
+        <div className="col-span-1">
           <h2>About Me</h2>
+          <p>
+            I'm a designer in Chicago with a passion for building helpful,
+            thoughtful software. Though I started my career in graphic design,
+            I've evolved a step ahead of the industry shifts. I've been an
+            interactive designer, interaction designer, product designer,
+            product manager, and frontend engineer.
+          </p>
+        </div>
+        <div className="col-span-1">
+          <h2>How I Work</h2>
           <p>
             Here are some tools and activities that I am highly comfortable with
             and have used regularly in my work.
           </p>
-        </header>
-
-        <ul className="grid tags-list">
-          {shuffledList.map((key, value) => {
-            return <li>{key}</li>;
-          })}
-        </ul>
+          <ul className="grid tags-list">
+            {shuffledList.map((key, value) => {
+              return <li>{key}</li>;
+            })}
+          </ul>
+        </div>
+        <div className="col-span-1">
+          <h2>Something Else</h2>
+          <p>Informative and inspirational.</p>
+        </div>
       </section>
     </>
   );

@@ -101,7 +101,7 @@ section {
 }
 
 .tags-list {
-  @apply flex flex-wrap md:justify-center gap-4;
+  @apply flex flex-wrap gap-4;
 }
 
 .tags-list li {
