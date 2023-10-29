@@ -59,7 +59,7 @@ export function Home() {
         </animated.div>
       </section>
       <div className="section-divider" />
-      <section className="content-container -mt-12">
+      <section className="content-container -mt-6">
         <header className="section-header">
           <h2>Experience</h2>
         </header>
