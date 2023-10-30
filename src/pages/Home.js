@@ -1,9 +1,13 @@
 // React utils
 import { animated, useSpring } from "@react-spring/web";
 
+import { useState, useEffect } from "react";
+
 import { ReactComponent as SkytellerLogo } from "./skyteller-logo-white.svg";
 
 export function Home() {
+  const [expanded, setExpanded] = useState(false);
+
   const styles = useSpring({
     from: {
       opacity: 0,
@@ -16,8 +20,12 @@ export function Home() {
   });
 
   function expandSection() {
-    console.log("expand!!!");
+    setExpanded(!expanded);
   }
+
+  useEffect(() => {
+    console.log("Expanded?", expanded);
+  }, [expanded]);
 
   const tagsList = [
     "SQL",
@@ -37,6 +45,8 @@ export function Home() {
     "CSS",
     "JavaScript",
     "Tailwind",
+    "Information architecture",
+    "Heuristics",
   ];
 
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
@@ -51,20 +61,25 @@ export function Home() {
             Hi, I'm Kunal &ndash; a product design lead in Chicago.
           </h1>
           <p className="lg:mx-12 lg:max-w-4xl">
-            I have 16 years of building and delivering user experiences in roles
-            as a designer, product manager, and software engineer. I'm a systems
-            thinker, technically oriented, and highly comfortable in new and
-            ambiguous problem areas.
+            I combine 16 years of building and delivering user experiences in
+            roles as a designer, product manager, and software engineer. I'm a
+            systems thinker, technically oriented, and highly comfortable in new
+            and ambiguous problem areas.
           </p>
         </animated.div>
       </section>
-      <div className="section-divider" />
-      <section className="content-container -mt-6">
+      <div className="section-divider -mt-6" />
+      <section className="content-container mt-6">
         <header className="section-header">
           <h2>Experience</h2>
         </header>
         <div className="lg:grid grid-cols-3 gap-8">
-          <div className="case-study col-span-1" onClick={expandSection}>
+          <div
+            className={`case-study transition-all ${
+              expanded ? "col-span-3" : "col-span-1"
+            }`}
+            onClick={expandSection}
+          >
             <h3>Galactic</h3>
             <h6>(RIP crypto, closed up shop)</h6>
             <p>I built financial products for web3 users.</p>
@@ -81,7 +96,10 @@ export function Home() {
             <h6>(acquired by PayPal)</h6>
             <p>I designed and built a contextual commerce platform.</p>
           </div>
-          <div className="case-study lg:col-span-1" onClick={expandSection}>
+          <div
+            className="case-study dscout lg:col-span-1"
+            onClick={expandSection}
+          >
             <h3>dscout</h3>
             <p>
               I designed and built the first iterations of dscout's mobile
@@ -96,7 +114,7 @@ export function Home() {
               quickly.
             </p>
           </div>
-          <div className="case-study col-span-1" onClick={expandSection}>
+          <div className="case-study vsa col-span-1" onClick={expandSection}>
             <h3>VSA</h3>
             <p>
               I built design systems and corporate literature for the world's
@@ -162,20 +180,20 @@ export function Home() {
           </p>
         </div>
         <div className="col-span-1">
+          <h2>Something Else</h2>
+          <p>Informative and inspirational.</p>
+        </div>
+        <div className="col-span-1">
           <h2>How I Work</h2>
           <p>
             Here are some tools and activities that I am highly comfortable with
             and have used regularly in my work.
           </p>
           <ul className="grid tags-list">
-            {shuffledList.map((key, value) => {
-              return <li>{key}</li>;
+            {shuffledList.map((value, key) => {
+              return <li key={key}>{value}</li>;
             })}
           </ul>
-        </div>
-        <div className="col-span-1">
-          <h2>Something Else</h2>
-          <p>Informative and inspirational.</p>
         </div>
       </section>
     </>
