@@ -90,6 +90,10 @@ section {
   @apply bg-contain shadow-2xl;
 }
 
+.skyteller-cover.focus {
+  @apply fixed;
+}
+
 .braintree-cover {
   background-image: url("/public/images/braintree-dashboard.gif");
   @apply bg-contain shadow-2xl bg-center bg-no-repeat;

@@ -58,7 +58,7 @@ export function Home() {
       <section className="content-container md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
         <animated.div className="w-full" style={styles}>
           <h1 className="lg:mx-12">
-            Hi, I'm Kunal &ndash; a product design lead in Chicago.
+            Hi, I'm Kunal &ndash; a UX design lead in Chicago.
           </h1>
           <p className="lg:mx-12 lg:max-w-4xl">
             I combine 16 years of building and delivering user experiences in
@@ -74,12 +74,7 @@ export function Home() {
           <h2>Experience</h2>
         </header>
         <div className="lg:grid grid-cols-3 gap-8">
-          <div
-            className={`case-study transition-all ${
-              expanded ? "col-span-3" : "col-span-1"
-            }`}
-            onClick={expandSection}
-          >
+          <div className="case-study transition-all col-span-1">
             <h3>Galactic</h3>
             <h6>(RIP crypto, closed up shop)</h6>
             <p>I built financial products for web3 users.</p>
@@ -123,13 +118,21 @@ export function Home() {
           </div>
         </div>
       </section>
+      <div className="section-divider"></div>
       <section className="content-container">
         <header className="section-header">
           <h2>Projects</h2>
           {/* <p>A few larger case studies to showcase that I'm most proud of.</p> */}
         </header>
         <div className="lg:grid grid-flow-row gap-16 grid-cols-5">
-          <aside className="skyteller-cover mb-8 lg:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96">
+          <aside
+            className={`skyteller-cover static mx-auto w-full mb-8 lg:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-indigo-950 items-center justify-center h-96 ${
+              expanded
+                ? "fixed top-20 left-0 right-0 bottom-0 w-2/3 mx-auto transition-all"
+                : ""
+            }`}
+            // onClick={expandSection}
+          >
             <SkytellerLogo />
           </aside>
           <article className="col-span-2 flex flex-col justify-center">
@@ -187,7 +190,7 @@ export function Home() {
           <h2>How I Work</h2>
           <p>
             Here are some tools and activities that I am highly comfortable with
-            and have used regularly in my work.
+            and use regularly in my work.
           </p>
           <ul className="grid tags-list">
             {shuffledList.map((value, key) => {
