@@ -73,12 +73,21 @@ section {
   @apply bg-gray-100 rounded-2xl px-8 py-10 md:py-20 lg:py-8 flex flex-col h-full items-center justify-center text-center mb-6 lg:mb-0 transition-all shadow-xl hover:shadow-2xl;
 }
 
-.case-study.vsa {
+.case-study.galactic {
+  @apply bg-[#2f2846] text-white;
+}
+
+.case-study.vsa,
+.case-study.modest {
   @apply bg-gray-950 text-white;
 }
 
 .case-study.dscout {
   @apply bg-[#0b73eb] text-white;
+}
+
+.case-study.paypal {
+  @apply bg-[#ffd140];
 }
 
 .case-study p {
@@ -91,7 +100,7 @@ section {
 }
 
 .skyteller-cover.focus {
-  @apply fixed;
+  @apply mx-auto transition-all z-20;
 }
 
 .braintree-cover {
