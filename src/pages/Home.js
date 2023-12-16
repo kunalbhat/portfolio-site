@@ -172,6 +172,11 @@ export function Home() {
       <section className="content-container grid-flow-row grid lg:grid-flow-col lg:grid-cols-3 gap-8 lg:gap-24">
         <div className="col-span-1">
           <h2>About Me</h2>
+          <img
+            src="./images/kunal-profile.jpg"
+            alt="Profile"
+            className="rounded-full h-48 w-48 my-4 border-8 border-white shadow-xl"
+          />
           <p>
             I'm a designer in Chicago with a passion for building helpful,
             thoughtful software. Though I started my career in graphic design,
