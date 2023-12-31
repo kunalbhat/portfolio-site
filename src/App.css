@@ -86,6 +86,10 @@ section {
   @apply bg-[#0b73eb] text-white;
 }
 
+.case-study.gravitytank {
+  @apply bg-[#00a1e1] text-white;
+}
+
 .case-study.paypal {
   @apply bg-[#ffd140];
 }

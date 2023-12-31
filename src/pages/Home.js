@@ -29,6 +29,7 @@ export function Home() {
 
   const tagsList = [
     "SQL",
+    "APIs",
     "React",
     "Figma",
     "ProtoPie",
@@ -58,13 +59,13 @@ export function Home() {
       <section className="content-container md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
         <animated.div className="w-full" style={styles}>
           <h1 className="lg:mx-12">
-            Hi, I'm Kunal &ndash; a product design lead in Chicago.
+            Hi, I'm Kunal &ndash; a product designer in Chicago.
           </h1>
-          <h3 className="lg:mx-12 lg:max-w-4xl leading-relaxed font-normal">
-            I combine 16 years of building and delivering user experiences in
-            roles as a designer, product manager, and software engineer. I'm a
-            systems thinker, technically oriented, and highly comfortable in new
-            and ambiguous problem spaces.
+          <h3 className="lg:mx-12 lg:max-w-3xl leading-relaxed font-normal">
+            I combine 15+ years of building and delivering excellent experiences
+            in roles as a designer, product manager, and software engineer. I'm
+            a systems thinker, technically oriented, and highly comfortable in
+            new and ambiguous problem spaces.
           </h3>
         </animated.div>
       </section>
@@ -90,7 +91,7 @@ export function Home() {
           </div>
           <div className="case-study modest col-span-1" onClick={expandSection}>
             <h3>Modest</h3>
-            <h6>Product Design Engineer</h6>
+            <h6>Design Engineer, 2014&ndash;2015</h6>
             <p>I designed and built a contextual commerce platform.</p>
             <h6>(acquired by PayPal)</h6>
           </div>
@@ -99,21 +100,27 @@ export function Home() {
             onClick={expandSection}
           >
             <h3>dscout</h3>
+            <h6>Product Designer, 2012&ndash;2014</h6>
             <p>
-              I designed and built the first iterations of dscout's mobile
+              I designed and built the first major iterations of dscout's user
               research platform.
             </p>
           </div>
-          <div className="case-study col-span-1" onClick={expandSection}>
+          <div
+            className="case-study gravitytank col-span-1"
+            onClick={expandSection}
+          >
             <h3>gravitytank</h3>
-            <h6>(acquired by Salesforce)</h6>
+            <h6>Interaction Design Lead</h6>
             <p>
               I designed and built prototypes to help large organizations ideate
               quickly.
             </p>
+            <h6>(acquired by Salesforce)</h6>
           </div>
           <div className="case-study vsa col-span-1" onClick={expandSection}>
             <h3>VSA</h3>
+            <h6>Interactive Designer</h6>
             <p>
               I built design systems and corporate literature for the world's
               top brands.
@@ -145,9 +152,6 @@ export function Home() {
               off-ramp straight from your wallet or your personal Skyteller
               off-ramp contract.
             </p>
-            <a href="/" className="button mt-8 -ml-2">
-              Read on
-            </a>
           </article>
         </div>
       </section>
@@ -161,9 +165,6 @@ export function Home() {
               &ndash; the primary tool Braintree merchants use to manage their
               payments.
             </p>
-            <a href="/" className="button mt-8 -ml-2">
-              Read on
-            </a>
           </article>
           <aside className="braintree-cover mb-8 lg:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-80 md:h-96"></aside>
         </div>
@@ -171,7 +172,6 @@ export function Home() {
       <div className="section-divider"></div>
       <section className="content-container grid-flow-row grid lg:grid-flow-col lg:grid-cols-3 gap-8 lg:gap-24">
         <div className="col-span-1">
-          <h2>About Me</h2>
           <img
             src="./images/kunal-profile.jpg"
             alt="Profile"
