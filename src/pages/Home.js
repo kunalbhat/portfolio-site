@@ -59,8 +59,7 @@ export function Home() {
       <section className="content-container md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
         <animated.div className="w-full" style={styles}>
           <h1 className="lg:mx-12">
-            Hi, I'm Kunal &ndash; a <span className="underline">designer</span>{" "}
-            in Chicago.
+            Hi, I'm Kunal &ndash; a product-minded builder in Chicago.
           </h1>
           <h3 className="lg:mx-12 lg:max-w-3xl leading-relaxed font-normal">
             I combine 15+ years of building and delivering excellent experiences
@@ -178,17 +177,13 @@ export function Home() {
             alt="Profile"
             className="rounded-full h-48 w-48 my-4 border-8 border-white shadow-xl"
           />
-          <p>
-            I'm a designer in Chicago with a passion for building helpful,
-            thoughtful software. Though I started my career in graphic design,
-            I've evolved a step ahead of the industry shifts. I've been an
-            interactive designer, interaction designer, product designer,
-            product manager, and frontend engineer.
-          </p>
         </div>
         <div className="col-span-1">
-          <h2>Something Else</h2>
-          <p>Informative and inspirational.</p>
+          <h2>About Me</h2>
+          <p>
+            I'm a fullstack designer with experience as a product manager, and
+            as an engineer.
+          </p>
         </div>
         <div className="col-span-1">
           <h2>How I Work</h2>
