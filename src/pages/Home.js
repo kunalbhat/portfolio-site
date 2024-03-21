@@ -128,8 +128,8 @@ export function Home() {
           </div>
         </div>
       </section>
-      {/* <div className="section-divider"></div> */}
-      {/* <section className="content-container">
+      <div className="section-divider"></div>
+      <section className="content-container">
         <header className="section-header">
           <h2>Projects</h2>
         </header>
@@ -168,7 +168,7 @@ export function Home() {
           </article>
           <aside className="braintree-cover mb-8 lg:mb-0 flex col-span-3 shadow-xl rounded-2xl bg-white items-center justify-center h-80 md:h-96"></aside>
         </div>
-      </section> */}
+      </section>
       <div className="section-divider"></div>
       <section className="content-container grid-flow-row grid lg:grid-flow-col lg:grid-cols-3 gap-8 lg:gap-24">
         <div className="col-span-1">
