@@ -199,12 +199,35 @@ export function Home() {
           </p>
           <p>
             Aside from design, my interest lie in building{" "}
-            <a href="https://www.github.com/kunalbhat" target="_blank">
+            <a
+              href="https://www.github.com/kunalbhat"
+              target="_blank"
+              rel="noreferrer"
+            >
               small, helpful apps
             </a>
             , solving puzzles, tennis, soccer, and biking around Chicago. I also
             spend a lot of time attempting to dream up a daily word game that
             the NYT purchases for a modest amount of money some day.
+          </p>
+          <p>
+            <a
+              href="https://www.github.com/kunalbhat"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+            <br />
+            <p>
+              <a
+                href="https://www.linkedin.com/in/kunal-s-bhat"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+            </p>
           </p>
         </div>
         <div className="col-span-1">
