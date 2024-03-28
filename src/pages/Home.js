@@ -48,6 +48,7 @@ export function Home() {
     "Tailwind",
     "Information architecture",
     "Heuristics",
+    "Git",
   ];
 
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
@@ -59,13 +60,13 @@ export function Home() {
       <section className="content-container md:flex md:gap-12 mt-0 md:mb-6 lg:mb-12">
         <animated.div className="w-full" style={styles}>
           <h1 className="lg:mx-12">
-            Hi, I'm Kunal &ndash; a product-minded builder in Chicago.
+            Hi, I'm Kunal &ndash; a fullstack product designer in Chicago.
           </h1>
           <h3 className="lg:mx-12 lg:max-w-3xl leading-relaxed font-normal">
             I combine 15+ years of building and delivering excellent experiences
-            in roles as a designer, product manager, and software engineer. I'm
-            a systems thinker, technically oriented, and highly comfortable in
-            new and ambiguous problem spaces.
+            in roles as a product designer, product manager, and frontend
+            engineer. I'm a systems thinker, technically oriented, and highly
+            comfortable in new and ambiguous problem spaces.
           </h3>
         </animated.div>
       </section>
@@ -75,6 +76,13 @@ export function Home() {
           <h2>Experience</h2>
         </header>
         <div className="lg:grid grid-cols-3 gap-8">
+          <div className="case-study magic transition-all col-span-1">
+            <h3>Magic+Might</h3>
+            <h6>Design Director</h6>
+            <p>
+              We make strategy tangible through inspired products and services.
+            </p>
+          </div>
           <div className="case-study galactic transition-all col-span-1">
             <h3>Galactic</h3>
             <h6>Product Design Engineer</h6>
@@ -117,14 +125,6 @@ export function Home() {
               quickly.
             </p>
             <h6>(acquired by Salesforce)</h6>
-          </div>
-          <div className="case-study vsa col-span-1" onClick={expandSection}>
-            <h3>VSA</h3>
-            <h6>Interactive Designer</h6>
-            <p>
-              I built design systems and corporate literature for the world's
-              top brands.
-            </p>
           </div>
         </div>
       </section>
@@ -172,24 +172,91 @@ export function Home() {
       <div className="section-divider"></div>
       <section className="content-container grid-flow-row grid lg:grid-flow-col lg:grid-cols-3 gap-8 lg:gap-24">
         <div className="col-span-1">
-          <img
-            src="./images/kunal-profile.jpg"
-            alt="Profile"
-            className="rounded-full h-48 w-48 my-4 border-8 border-white shadow-xl"
-          />
+          <div className="flex items-center">
+            <img
+              src="./images/kunal-profile.jpg"
+              alt="Profile"
+              className="rounded-full h-24 w-24 mb-4 mr-4 border-4 border-white shadow-xl"
+            />
+            <h2>About</h2>
+          </div>
+          <p>
+            I started my career in traditional graphic design but my interest in
+            technology and building helpful user experiences quickly took my
+            career into new and emergent spaces.
+          </p>
+          <p>
+            Design is at the core of my sensibilities, but over the years other
+            roles have helped hone soft and hard skills that make me the
+            fullstack product designer I am today.
+          </p>
+          <p>
+            My experience is with a mix of building for early stage problem
+            areas and for enterprise scale.
+          </p>
         </div>
         <div className="col-span-1">
-          <h2>About Me</h2>
-          <p>
-            I'm a fullstack designer with experience as a product manager, and
-            as an engineer.
-          </p>
+          <h2>Resume</h2>
+          <dl>
+            <dt>Magic+Might</dt>
+            <dd>
+              Design Director
+              <br />
+              2023 &ndash; Present
+            </dd>
+            <dt>Galactic</dt>
+            <dd>
+              Product Design Engineer
+              <br />
+              2021 &ndash; 2023
+            </dd>
+            <dt>PayPal / Braintree</dt>
+            <dd>
+              Senior Technical Product Manager (L25)
+              <br />
+              2021
+              <br />
+              Product Manager (L24)
+              <br />
+              Product Design Engineer (L24)
+            </dd>
+            <dt>Modest</dt>
+            <h6>acquired by PayPal</h6>
+            <dd>
+              Product Design Engineer
+              <br />
+              2014 &ndash; 2015
+            </dd>
+            <dt>dscout</dt>
+            <h6>as part of gravitytank</h6>
+            <dd>
+              Product Designer
+              <br />
+              2012 &ndash; 2014
+            </dd>
+            <dt>gravitytank</dt>
+            <dd>
+              Interaction Design Lead
+              <br />
+              2010 &ndash; 2012
+            </dd>
+            <dt>VSA Partners</dt>
+            <dd>
+              Interactive Designer
+              <br />
+              2009 &ndash; 2010
+              <br />
+              Designer
+              <br />
+              2007 &ndash; 2008
+            </dd>
+          </dl>
         </div>
         <div className="col-span-1">
           <h2>How I Work</h2>
           <p>
-            Here are some tools and activities that I am highly comfortable with
-            and use regularly in my work.
+            Tools and activities I'm highly comfortable with and use regularly
+            in my work.
           </p>
           <ul className="grid tags-list">
             {shuffledList.map((value, key) => {
