@@ -39,6 +39,7 @@ export function Home() {
     "Looker",
     "User research",
     "User testing",
+    "Research analysis",
     "Firebase",
     "Design systems",
     "Systems thinking",
@@ -49,6 +50,8 @@ export function Home() {
     "Information architecture",
     "Heuristics",
     "Git",
+    "Figjam",
+    "Journey mapping",
   ];
 
   const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
@@ -173,11 +176,11 @@ export function Home() {
       <section className="content-container grid-flow-row grid lg:grid-flow-col lg:grid-cols-3 gap-8 lg:gap-24">
         <div className="col-span-1">
           <div className="flex items-center">
-            <img
+            {/* <img
               src="./images/kunal-profile.jpg"
               alt="Profile"
               className="rounded-full h-24 w-24 mb-4 mr-4 border-4 border-white shadow-xl"
-            />
+            /> */}
             <h2>About</h2>
           </div>
           <p>
@@ -186,17 +189,27 @@ export function Home() {
             career into new and emergent spaces.
           </p>
           <p>
-            Design is at the core of my sensibilities, but over the years other
-            roles have helped hone soft and hard skills that make me the
-            fullstack product designer I am today.
+            Design is at the core of my sensibilities, but roles in product
+            management and software engineering have helped hone soft and hard
+            skills that make me the fullstack product designer I am today.
           </p>
           <p>
-            My experience is with a mix of building for early stage problem
-            areas and for enterprise scale.
+            My experience is a mix of building for early stage problem areas and
+            for enterprise scale.
+          </p>
+          <p>
+            Aside from design, my interest lie in building{" "}
+            <a href="https://www.github.com/kunalbhat" target="_blank">
+              small, helpful apps
+            </a>
+            , solving puzzles, tennis, soccer, and biking around Chicago. I also
+            spend a lot of time attempting to dream up a daily word game that
+            the NYT purchases for a modest amount of money some day.
           </p>
         </div>
         <div className="col-span-1">
           <h2>Resume</h2>
+          <p>A more detailed account of my career.</p>
           <dl>
             <dt>Magic+Might</dt>
             <dd>
@@ -214,21 +227,21 @@ export function Home() {
             <dd>
               Senior Technical Product Manager (L25)
               <br />
-              2021
-              <br />
               Product Manager (L24)
               <br />
               Product Design Engineer (L24)
+              <br />
+              2015 &ndash; 2021
             </dd>
             <dt>Modest</dt>
-            <h6>acquired by PayPal</h6>
+            <i>acquired by PayPal</i>
             <dd>
               Product Design Engineer
               <br />
               2014 &ndash; 2015
             </dd>
             <dt>dscout</dt>
-            <h6>as part of gravitytank</h6>
+            <i>as part of gravitytank</i>
             <dd>
               Product Designer
               <br />

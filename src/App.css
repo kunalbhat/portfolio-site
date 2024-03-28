@@ -17,7 +17,7 @@ h3 {
 }
 
 h1 {
-  @apply text-7xl md:text-7xl mb-12;
+  @apply text-5xl md:text-7xl mb-12;
 }
 
 h2 {
@@ -149,5 +149,5 @@ section {
 }
 
 .tags-list li {
-  @apply bg-white shadow-xl px-4 py-1 text-base rounded-lg list-none flex items-center justify-center text-center hover:drop-shadow-2xl drop-shadow-md;
+  @apply bg-white shadow-xl px-3 py-1 text-sm rounded-lg list-none flex items-center justify-center text-center hover:drop-shadow-2xl drop-shadow-md;
 }
